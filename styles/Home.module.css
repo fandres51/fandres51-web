@@ -4,6 +4,12 @@
   margin-left: 10px;
 }
 
+@media (min-width: 426px) {
+  .upperline {
+    display: none;
+  }
+}
+
 /* .container {
   padding: 0 2rem;
 }

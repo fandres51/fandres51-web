@@ -23,6 +23,14 @@
 .callToAction {
     color: #226E93;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 15px;
+}
+
+.callToAction:hover {
+    color: #205c7a;
+}
+
+.callToAction:active {
+    color: #184257;
 }

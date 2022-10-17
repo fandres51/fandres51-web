@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getAllFilesMetadata } from "../lib/mdx";
 import HeaderComponent from "../components/HeaderComponent";
 import FooterComponent from "../components/FooterComponent";
+import BannerComponent from "../components/BannerComponent";
 
 export default function Home({ posts }) {
     return (
@@ -29,34 +30,13 @@ export default function Home({ posts }) {
                     callToActionLink="https://linktr.ee/fandres51"
                 ></HeaderComponent>
                 <div className={styles.upperline}></div>
-
-                <h1 className={styles.title}>Welcome to My blog</h1>
-
-                <p className={styles.description}>
-                    Get started by editing{" "}
-                    <code className={styles.code}>pages/index.js</code>
-                </p>
-
-                <div>
-                    {posts.map((post) => (
-                        <div key={post.slug} className={styles.grid}>
-                            <Link
-                                href={`/${post.slug}`}
-                                className={styles.card}
-                            >
-                                <div>
-                                    <h2>{post.title} &rarr;</h2>
-                                    <p>{post.date}</p>
-                                </div>
-                            </Link>
-                        </div>
-                    ))}
-                </div>
+                <BannerComponent
+                    message="Hi, I'm Fabio Andrés Enríquez, a Digital Marketing Student based on Quito, Ec."
+                    buttonMessage="Check out my Portfolio"
+                    buttonAction="/portfolio"
+                ></BannerComponent>
             </main>
-
-            <footer className={styles.footer}>
-                <FooterComponent></FooterComponent>
-            </footer>
+            <FooterComponent></FooterComponent>
         </div>
     );
 }

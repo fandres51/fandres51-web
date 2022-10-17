@@ -11,7 +11,7 @@ export default function HeaderComponent({ title, titleLink, callToAction, callTo
         <div className={styles.logo}>
           <Image
             src="/images/logo.png"
-            alt="Vercel Logo"
+            alt="Logo"
             width={44}
             height={44}
           />
