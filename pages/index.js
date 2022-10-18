@@ -6,8 +6,15 @@ import { getAllFilesMetadata } from "../lib/mdx";
 import HeaderComponent from "../components/HeaderComponent";
 import FooterComponent from "../components/FooterComponent";
 import BannerComponent from "../components/BannerComponent";
+import AboutComponent from "../components/AboutComponent";
+import GaleryComponent from "../components/GaleryComponent";
 
 export default function Home({ posts }) {
+    const aboutText = `
+    Hi, I am a software engenieer who got caught by marketing and creativity after beeng graduated. 
+    As my formation was, I love tecnology, so I try to combine the best of coding, user experience design and digital marketing in my work.
+    If you need a job done related with any of those areas, get in touch with me so we can talk.
+    `
     return (
         <div className={styles.container}>
             <Head>
@@ -19,7 +26,6 @@ export default function Home({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-                <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></link>
             </Head>
 
             <main className={styles.main}>
@@ -35,6 +41,13 @@ export default function Home({ posts }) {
                     buttonMessage="Check out my Portfolio"
                     buttonAction="/portfolio"
                 ></BannerComponent>
+                <div className={styles.about}>
+                    <AboutComponent
+                        title={"About me"}
+                        text={aboutText}
+                    ></AboutComponent>
+                </div>
+                <GaleryComponent></GaleryComponent>
             </main>
             <FooterComponent></FooterComponent>
         </div>

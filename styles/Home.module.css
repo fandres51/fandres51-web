@@ -4,11 +4,21 @@
   margin-left: 10px;
 }
 
+.about {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 @media (min-width: 426px) {
   .upperline {
     display: none;
   }
+  .about {
+    margin-top: 120px;
+    margin-bottom: 150px;
+  }
 }
+
 
 /* .container {
   padding: 0 2rem;
