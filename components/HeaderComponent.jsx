@@ -15,7 +15,7 @@ export default function HeaderComponent({ title, titleLink, callToAction, callTo
             width={44}
             height={44}
           />
-          <div>{title}</div>
+          <div><h1>{title}</h1></div>
         </div>
       </Link>
       <a href={callToActionLink} target="blank">

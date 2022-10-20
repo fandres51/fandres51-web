@@ -1,11 +1,5 @@
-.box {
+.galery div {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 150px;
-    width: 300px;
-}
-
-.text {
-
+    flex-direction: row;
+    margin: 3px;
 }

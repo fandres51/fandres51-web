@@ -1,0 +1,10 @@
+.list {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.element {
+    display: inline-block;
+    margin: 10px;
+}

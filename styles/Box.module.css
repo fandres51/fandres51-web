@@ -1,0 +1,29 @@
+.box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.text {
+    padding: 10px 15px 10px 15px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(159, 159, 159, 0.468);
+    border-top-left-radius: 10px;
+    text-align: end;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box:hover .text {
+    font-size: 25px;
+}
+
+.box:hover .image {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
