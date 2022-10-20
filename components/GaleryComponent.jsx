@@ -10,14 +10,14 @@ export default function GaleryComponent() {
           img={'/images/galery/marketing.jpg'}
           title={'Marketing'}
           width={450}
-          height={230}
+          height={250}
           link={'/portfolio/marketing'}
         ></BoxWithTitle>
         <BoxWithTitle
           img={'/images/galery/ux.jpg'}
           title={'UX'}
           width={250}
-          height={230}
+          height={250}
           link={'/portfolio/ux'}
         ></BoxWithTitle>
       </div>
@@ -26,14 +26,14 @@ export default function GaleryComponent() {
           img={'/images/galery/code.jpg'}
           title={'Coding'}
           width={250}
-          height={230}
+          height={250}
           link={'/portfolio/code'}
         ></BoxWithTitle>
         <BoxWithTitle
           img={'/images/galery/ad.jpg'}
           title={'Advertising'}
           width={450}
-          height={230}
+          height={250}
           link={'/portfolio/ad'}
         ></BoxWithTitle>
       </div>

@@ -48,10 +48,12 @@ export default function Home() {
                 </div>
                 <div className={styles.aboutline}></div>
                 <div className={styles.previousWork}>
-                    <TitleComponent
-                        title={'My Previous Work'}
-                        align={'center'}
-                    ></TitleComponent>
+                    <div className={styles.previousWorkTitle}>
+                        <TitleComponent
+                            title={'My Previous Work'}
+                            align={'center'}
+                        ></TitleComponent>
+                    </div>
                     <div className={styles.bigScreens}>
                         <GaleryComponent></GaleryComponent>
                     </div>
