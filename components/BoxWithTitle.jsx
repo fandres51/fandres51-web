@@ -19,7 +19,8 @@ export default function BoxWithTitle({ img, title, width, height, link }) {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center center',
                         width: '100%',
-                        height: '100%'
+                        height: '100%',
+                        borderRadius: 10
                     }}
                 ></div>
                 <div className={styles.text}>{title}</div>

@@ -1,0 +1,16 @@
+.line {
+    border-bottom: 1px #b4b4b4 solid;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}

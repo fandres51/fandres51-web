@@ -11,17 +11,21 @@
     background-color: rgba(159, 159, 159, 0.637);
     transition: 0.3s;
     position: absolute;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .box:hover {
     cursor: pointer;
 }
-
+/* 
 .box:hover .text {
     font-size: 25px;
-}
+} */
 
 .box:hover .image {
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+    height: 95%;
+    width: 95%;
+    /* -webkit-filter: blur(0.7px);
+    filter: blur(0.7px); */
 }

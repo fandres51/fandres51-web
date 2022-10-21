@@ -2,10 +2,32 @@ import HeaderComponent from "../components/HeaderComponent";
 import FooterComponent from "../components/FooterComponent";
 import BoxWithTitle from "../components/BoxWithTitle";
 import styles from '../styles/Portfolio.module.css'
-import Link from "next/link";
 import { getAllFilesMetadata } from "../lib/mdx";
+import { BsSearch } from 'react-icons/bs';
+import { useState, useEffect } from "react";
+import { useRouter } from 'next/router'
 
-export default function Portfolio({posts}) {
+export default function Portfolio({ posts }) {
+
+    useEffect(()=>{
+        console.log(posts)
+    },[]);
+
+    const router = useRouter();
+    const [showedPosts, setShowedPosts] = useState(posts);
+    const [searchedWord, setSearchedWord] = useState('');
+
+    let search = (word) => {
+        let showed = posts.filter((post) => {
+            return post.title.toLowerCase().includes(word.toLowerCase()) || post.keywords.toLowerCase().includes(word.toLowerCase());
+        });
+        setShowedPosts(showed);
+    }
+
+    const handleChange = event => {
+        setSearchedWord(event.target.value);
+    };
+
     return (
         <div>
             <HeaderComponent
@@ -14,19 +36,36 @@ export default function Portfolio({posts}) {
                 callToAction="Get in touch"
                 callToActionLink="https://linktr.ee/fandres51"
             ></HeaderComponent>
-            <div className={styles.list}>
-                { posts.map((post) => (
-                    <div className={styles.element}>
-                        <BoxWithTitle
-                            key={post.title+post.date}
-                            title={post.title}
-                            img={post.img}
-                            link={`/portfolio/${post.slug}`}
-                            height={220}
-                            width={310}
-                        ></BoxWithTitle>
+            <div className={styles.line}></div>
+            <div className={styles.body}>
+                <div className={styles.filters}>
+                    <div className={styles.title} onClick={()=>search('')}>
+                        Portfolio
                     </div>
-                ))}    
+                    <div className={styles.searchbar}>
+                        <input
+                            type="text"
+                            className={styles.searchinput}
+                            placeholder="Search" value={searchedWord}
+                            onChange={handleChange} />
+                        <button className={styles.searchbutton} onClick={() => search(searchedWord)}>
+                            <BsSearch size={17} color='#226E93' />
+                        </button>
+                    </div>
+                </div>
+                <div className={styles.list}>
+                    {showedPosts.map((post) => (
+                        <div className={styles.element} key={post.title + post.date}>
+                            <BoxWithTitle
+                                title={post.title}
+                                img={post.img}
+                                link={`/portfolio/${post.slug}`}
+                                height={220}
+                                width={300}
+                            ></BoxWithTitle>
+                        </div>
+                    ))}
+                </div>
             </div>
             <FooterComponent></FooterComponent>
         </div>
@@ -35,7 +74,6 @@ export default function Portfolio({posts}) {
 
 export async function getStaticProps() {
     const posts = await getAllFilesMetadata();
-    console.log(posts);
 
     return {
         props: { posts },

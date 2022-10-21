@@ -1,6 +1,7 @@
 import React from 'react'
 import BoxWithTitle from './BoxWithTitle'
 import styles from '../styles/Galery.module.css'
+import Router from 'next/router'
 
 export default function GaleryComponent() {
   return (

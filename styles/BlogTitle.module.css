@@ -1,0 +1,24 @@
+.box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.text {
+    padding: 15px 45px 15px 45px;
+    color: white;
+    font-size: 40px;
+    background-color: rgba(159, 159, 159, 0.911);
+    /* transition: 0.3s; */
+    position: absolute;
+    border-top-right-radius: 30px;
+
+}
+
+/* .box:hover .text {
+    font-size: 25px;
+} */
+
+/* .box:hover .image {
+    -webkit-filter: blur(0.7px);
+    filter: blur(0.7px);
+} */

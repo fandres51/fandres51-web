@@ -63,7 +63,7 @@ export default function Home() {
                     <div>
                         <Link href={'/portfolio'}>
                             <div className={styles.workMessage}>
-                                <div className={styles.workMessage}>Check out my portfolio</div>
+                                <div className={styles.workMessage}>Check out my full portfolio</div>
                                 <BsArrowRightShort size={27} color='#226E93'/>
                             </div>
                         </Link>
