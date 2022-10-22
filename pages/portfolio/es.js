@@ -1,8 +1,8 @@
-import HeaderComponent from "../components/HeaderComponent";
-import FooterComponent from "../components/FooterComponent";
-import BoxWithTitle from "../components/BoxWithTitle";
-import styles from '../styles/Portfolio.module.css'
-import { getAllFilesMetadata } from "../lib/mdx";
+import HeaderComponent from "../../components/HeaderComponent";
+import FooterComponent from "../../components/FooterComponent";
+import BoxWithTitle from "../../components/BoxWithTitle";
+import styles from '../../styles/Portfolio.module.css'
+import { getAllFilesMetadata } from "../../lib/mdx";
 import { BsSearch } from 'react-icons/bs';
 import { useState, useEffect } from "react";
 import { useRouter } from 'next/router'
@@ -32,15 +32,15 @@ export default function Portfolio({ posts }) {
         <div>
             <HeaderComponent
                 title="@fandres51"
-                titleLink="/"
-                callToAction="Get in touch"
+                titleLink="/es"
+                callToAction="Contáctame"
                 callToActionLink="https://linktr.ee/fandres51"
             ></HeaderComponent>
             <div className={styles.line}></div>
             <div className={styles.body}>
                 <div className={styles.filters}>
                     <div className={styles.title} onClick={()=>search('')}>
-                        Portfolio
+                        Portafolio 
                     </div>
                     <div className={styles.searchbar}>
                         <input
@@ -68,7 +68,7 @@ export default function Portfolio({ posts }) {
                 </div>
             </div>
             <FooterComponent
-                title={'Get in touch with me'}
+                title={'Contáctate conmigo'}
             ></FooterComponent>
         </div>
     )

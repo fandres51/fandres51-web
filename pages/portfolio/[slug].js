@@ -26,13 +26,15 @@ export default function Post({ source, frontmatter }) {
             <div className={styles.content}>
                 <MDXRemote {...source} />
             </div>
-            <FooterComponent></FooterComponent>
+            <FooterComponent
+                title={'Get in touch with me'}
+            ></FooterComponent>
         </div>
     );
 }
 
 export async function getStaticProps({ params }) {
-    const { source, frontmatter } = await getFileBySlug(params.slug);
+    const { source, frontmatter } = await getFileBySlug(params.slug, 'portfolio');
 
     return {
         props: {
@@ -43,7 +45,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const posts = await getFiles();
+    const posts = await getFiles('portfolio');
     const paths = posts.map((post) => ({
         params: {
             slug: post.replace(/\.mdx/, ""),

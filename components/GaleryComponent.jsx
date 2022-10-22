@@ -3,20 +3,20 @@ import BoxWithTitle from './BoxWithTitle'
 import styles from '../styles/Galery.module.css'
 import Router from 'next/router'
 
-export default function GaleryComponent() {
+export default function GaleryComponent({title1, title2, title3, title4}) {
   return (
     <div className={styles.galery}>
       <div>
         <BoxWithTitle
           img={'/images/galery/marketing.jpg'}
-          title={'Marketing'}
+          title={title1}
           width={450}
           height={250}
           link={'/portfolio/marketing'}
         ></BoxWithTitle>
         <BoxWithTitle
           img={'/images/galery/ux.jpg'}
-          title={'UX'}
+          title={title2}
           width={250}
           height={250}
           link={'/portfolio/ux'}
@@ -25,14 +25,14 @@ export default function GaleryComponent() {
       <div>
         <BoxWithTitle
           img={'/images/galery/code.jpg'}
-          title={'Coding'}
+          title={title3}
           width={250}
           height={250}
           link={'/portfolio/code'}
         ></BoxWithTitle>
         <BoxWithTitle
           img={'/images/galery/ad.jpg'}
-          title={'Advertising'}
+          title={title4}
           width={450}
           height={250}
           link={'/portfolio/ad'}
