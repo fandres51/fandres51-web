@@ -13,6 +13,7 @@
     position: absolute;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
+    max-width: 280px;
 }
 
 .box:hover {

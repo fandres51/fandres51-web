@@ -18,7 +18,7 @@ export default function HeaderComponent({ title, titleLink, callToAction, callTo
           <div><h1>{title}</h1></div>
         </div>
       </Link>
-      <a href={callToActionLink} target="blank">
+      <a href={callToActionLink} target="blank" style={{textDecoration:'none'}}>
         <div className={styles.callToAction}>{callToAction}</div>
       </a>
     </header>
