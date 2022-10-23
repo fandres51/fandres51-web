@@ -18,7 +18,7 @@ export default function Post({ source, frontmatter }) {
             <div className={styles.title}>
                 <BlogTitle
                     title={frontmatter.title}
-                    img={frontmatter.img}
+                    img={frontmatter.bannerimg}
                     height={155}
                     width={1400}
                 ></BlogTitle>

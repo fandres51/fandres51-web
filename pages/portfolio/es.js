@@ -4,14 +4,10 @@ import BoxWithTitle from "../../components/BoxWithTitle";
 import styles from '../../styles/Portfolio.module.css'
 import { getAllFilesMetadata } from "../../lib/mdx";
 import { BsSearch } from 'react-icons/bs';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from 'next/router'
 
 export default function Portfolio({ posts }) {
-
-    useEffect(()=>{
-        console.log(posts)
-    },[]);
 
     const router = useRouter();
     const [showedPosts, setShowedPosts] = useState(posts);
