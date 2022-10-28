@@ -12,9 +12,9 @@ import Link from "next/link";
 
 export default function Home() {
     const aboutText = `
-    Hi, I am a software engenieer who got caught by marketing and creativity after beeng graduated. 
-    As my formation was, I love tecnology, so I try to combine the best of coding, user experience design and digital marketing in my work.
-    If you need a job done related with any of those areas, get in touch with me so we can talk.
+    Hi, I am a software engineer who got caught in marketing and creativity after being graduated. 
+    As my formation was, I love technology, so I try to combine the best of coding, user experience design and digital marketing in my work.
+    If you need a job related to any of those areas, get in touch with me so we can talk.
     `
     return (
         <div className={styles.container}>
