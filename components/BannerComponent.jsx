@@ -8,9 +8,9 @@ export default function BannerComponent({ message, buttonMessage, buttonAction }
         <div className={styles.banner}>
             <div className={styles.text}>
                 <div className={styles.message}>{message}</div>
-                <Link href={buttonAction}>
+                <a style={{textDecoration:"none"}} href={buttonAction} target="blank">
                     <div className={styles.button}>{buttonMessage}</div>
-                </Link>
+                </a>
             </div>
             <div className={styles.flexBalance}></div>
             <div className={styles.bannermobile}>

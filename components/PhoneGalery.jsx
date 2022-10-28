@@ -10,28 +10,28 @@ export default function PhoneGaleryComponent({title1, title2, title3, title4}) {
                 title={title1}
                 width={'100%'}
                 height={100}
-                link={'/portfolio/marketing'}
+                link={'https://behance.net/fandres51'}
             ></BoxWithTitle>
             <BoxWithTitle
                 img={'/images/galery/ux.jpg'}
                 title={title2}
                 width={'100%'}
                 height={100}
-                link={'/portfolio/ux'}
+                link={'https://behance.net/fandres51'}
             ></BoxWithTitle>
             <BoxWithTitle
                 img={'/images/galery/code.jpg'}
                 title={title3}
                 width={'100%'}
                 height={100}
-                link={'/portfolio/code'}
+                link={'https://behance.net/fandres51'}
             ></BoxWithTitle>
             <BoxWithTitle
                 img={'/images/galery/ad.jpg'}
                 title={title4}
                 width={'100%'}
                 height={100}
-                link={'/portfolio/ad'}
+                link={'https://behance.net/fandres51'}
             ></BoxWithTitle>
         </div>
     )

@@ -12,14 +12,14 @@ export default function GaleryComponent({title1, title2, title3, title4}) {
           title={title1}
           width={450}
           height={250}
-          link={'/portfolio/marketing'}
+          link={'https://behance.net/fandres51'}
         ></BoxWithTitle>
         <BoxWithTitle
           img={'/images/galery/ux.jpg'}
           title={title2}
           width={250}
           height={250}
-          link={'/portfolio/ux'}
+          link={'https://behance.net/fandres51'}
         ></BoxWithTitle>
       </div>
       <div>
@@ -28,14 +28,14 @@ export default function GaleryComponent({title1, title2, title3, title4}) {
           title={title3}
           width={250}
           height={250}
-          link={'/portfolio/code'}
+          link={'https://behance.net/fandres51'}
         ></BoxWithTitle>
         <BoxWithTitle
           img={'/images/galery/ad.jpg'}
           title={title4}
           width={450}
           height={250}
-          link={'/portfolio/ad'}
+          link={'https://behance.net/fandres51'}
         ></BoxWithTitle>
       </div>
     </div>

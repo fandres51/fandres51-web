@@ -39,7 +39,7 @@ export default function Home() {
                 <BannerComponent
                     message="Hi, I'm Fabio Andrés Enríquez, a Digital Marketing Student based on Quito, Ec."
                     buttonMessage="Check out my Portfolio"
-                    buttonAction="/portfolio"
+                    buttonAction="https://behance.net/fandres51"
                 ></BannerComponent>
                 <div className={styles.about}>
                     <AboutComponent
@@ -72,12 +72,12 @@ export default function Home() {
                         ></PhoneGalery>
                     </div>
                     <div>
-                        <Link href={'/portfolio'}>
+                        <a href={'https://behance.net/fandres51'} target="blank" style={{textDecoration:"none"}}>
                             <div className={styles.workMessage}>
                                 <div className={styles.workMessage}>Check out my full portfolio</div>
                                 <BsArrowRightShort size={27} color='#226E93'/>
                             </div>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </main>

@@ -4,7 +4,7 @@ import styles from '../styles/Box.module.css'
 
 export default function BoxWithTitle({ img, title, width, height, link }) {
     return (
-        <Link href={link}>
+        <a href={link} target="blank">
             <div
                 className={styles.box}
                 style={{
@@ -25,6 +25,6 @@ export default function BoxWithTitle({ img, title, width, height, link }) {
                 ></div>
                 <div className={styles.text}>{title}</div>
             </div>
-        </Link>
+        </a>
     )
 }
