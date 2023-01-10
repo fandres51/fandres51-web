@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import HeaderComponent from "../components/HeaderComponent";
 import FooterComponent from "../components/FooterComponent";
 import BannerComponent from "../components/BannerComponent";
-import AboutComponent from "../components/AboutComponent";
+import AboutEsComponent from "../components/AboutEsComponent";
 import GaleryComponent from '../components/GaleryComponent';
 import PhoneGalery from '../components/PhoneGalery';
 import TitleComponent from '../components/TitleComponent';
@@ -32,44 +32,31 @@ export default function Home() {
                 ></HeaderComponent>
                 <div className={styles.upperline}></div>
                 <BannerComponent
-                    message="Hola, soy Fabio Andrés Enríquez, un estudiante de márketing digital de Quito, Ec."
-                    buttonMessage="Mira mi portafolio"
-                    buttonAction={'https://behance.net/fandres51'}
+                    message="Hola, soy Fabio Andrés Enríquez, desarrollador de software de Quito, Ec."
+                    buttonMessage="Encuéntrame en Linkedin"
+                    buttonAction={'https://www.linkedin.com/in/fabio-andres-enriquez-476692194/'}
                 ></BannerComponent>
                 <div className={styles.about}>
-                    <AboutComponent
+                    <AboutEsComponent
                         title={"Acerca de mi"}
-                        text={aboutText}
-                    ></AboutComponent>
+                    ></AboutEsComponent>
                 </div>
                 <div className={styles.aboutline}></div>
                 <div className={styles.previousWork}>
-                    <div className={styles.previousWorkTitle}>
+                    {/* <div className={styles.previousWorkTitle}>
                         <TitleComponent
                             title={'Trabajos previos'}
                             align={'center'}
                         ></TitleComponent>
                     </div>
-                    <div className={styles.bigScreens}>
-                        <GaleryComponent
-                            title1={'Márketing'}
-                            title2={'UX'}
-                            title3={'Programación'}
-                            title4={'Publicidad'}
-                        ></GaleryComponent>
-                    </div>
-                    <div className={styles.smallScreens}>
-                        <PhoneGalery
-                            title1={'Márketing'}
-                            title2={'UX'}
-                            title3={'Programación'}
-                            title4={'Publicidad'}
-                        ></PhoneGalery>
-                    </div>
+                     */}
+                    <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
+                        <img className={styles.logoImg} src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo" />
+                    </a>
                     <div>
-                        <a href="https://behance.net/fandres51" target="blank" style={{textDecoration:"none"}}>
+                        <a href="https://behance.net/fandres51" target="blank" style={{ textDecoration: "none" }}>
                             <div className={styles.workMessage}>
-                                <div className={styles.workMessage}>Mira mi portafolio completo</div>
+                                <div className={styles.workMessage}>Mira mi portafolio</div>
                                 <BsArrowRightShort size={27} color='#226E93' />
                             </div>
                         </a>

@@ -11,11 +11,6 @@ import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
 
 export default function Home() {
-    const aboutText = `
-    Hi, I am a software engineer who got caught in marketing and creativity after being graduated. 
-    As my formation was, I love technology, so I try to combine the best of coding, user experience design and digital marketing in my work.
-    If you need a job related to any of those areas, get in touch with me so we can talk.
-    `
     return (
         <div className={styles.container}>
             <Head>
@@ -37,45 +32,31 @@ export default function Home() {
                 ></HeaderComponent>
                 <div className={styles.upperline}></div>
                 <BannerComponent
-                    message="Hi, I'm Fabio Andrés Enríquez, a Digital Marketing Student based on Quito, Ec."
-                    buttonMessage="Check out my Portfolio"
-                    buttonAction="https://behance.net/fandres51"
+                    message="Hi, I'm Fabio Andrés Enríquez, a Software Developer based on Quito, Ec."
+                    buttonMessage="Find me on Linkedin"
+                    buttonAction="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/"
                 ></BannerComponent>
                 <div className={styles.about}>
                     <AboutComponent
-                        title={"About me"}
-                        text={aboutText}
+                        title={"About me:"}
                     ></AboutComponent>
                 </div>
                 <div className={styles.aboutline}></div>
                 <div className={styles.previousWork}>
-                    <div className={styles.previousWorkTitle}>
+                    {/* <div className={styles.previousWorkTitle}>
                         <TitleComponent
                             title={'My Previous Work'}
                             align={'center'}
                         ></TitleComponent>
-                    </div>
-                    <div className={styles.bigScreens}>
-                        <GaleryComponent
-                            title1={'Marketing'}
-                            title2={'UX'}
-                            title3={'Coding'}
-                            title4={'Advertising'}
-                        ></GaleryComponent>
-                    </div>
-                    <div className={styles.smallScreens}>
-                        <PhoneGalery
-                            title1={'Marketing'}
-                            title2={'UX'}
-                            title3={'Coding'}
-                            title4={'Advertising'}
-                        ></PhoneGalery>
-                    </div>
+                    </div> */}
+                    <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
+                        <img className={styles.logoImg} src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo" />
+                    </a>
                     <div>
-                        <a href={'https://behance.net/fandres51'} target="blank" style={{textDecoration:"none"}}>
+                        <a href={'https://github.com/fandres51'} target="blank" style={{ textDecoration: "none" }}>
                             <div className={styles.workMessage}>
-                                <div className={styles.workMessage}>Check out my full portfolio</div>
-                                <BsArrowRightShort size={27} color='#226E93'/>
+                                <div className={styles.workMessage}>Check out my portfolio</div>
+                                <BsArrowRightShort size={27} color='#226E93' />
                             </div>
                         </a>
                     </div>
