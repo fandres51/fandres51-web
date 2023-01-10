@@ -9,13 +9,9 @@ import PhoneGalery from '../components/PhoneGalery';
 import TitleComponent from '../components/TitleComponent';
 import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
-    const aboutText = `
-    Que tal! Soy Fabio, un ingeniero informático que se apasionó por el mundo del márketing y la creatividad después de graduarse. 
-    Debido a mi formación, amo la tecnología, por lo tanto combino las mejores prácticas de programación, diseño de experiencia de usuario y márqueting digital en todo trabajo que realizo.
-    Si necesitas ayuda en cualquiera de estas áreas, no dudes en comunicarte conmigo.
-    `
     return (
         <div className={styles.container}>
             <Head>
@@ -51,9 +47,9 @@ export default function Home() {
                     </div>
                      */}
                     <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
-                        <img className={styles.logoImg} src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo" />
+                        <Image className={styles.logoImg} src="/images/GithubLogo.png" alt="Github logo"  width={320} height={320}/>
                     </a>
-                    <div>
+                    <div style={{marginTop: 30}}>
                         <a href="https://behance.net/fandres51" target="blank" style={{ textDecoration: "none" }}>
                             <div className={styles.workMessage}>
                                 <div className={styles.workMessage}>Mira mi portafolio</div>

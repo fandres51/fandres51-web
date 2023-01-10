@@ -9,6 +9,7 @@ import PhoneGalery from '../components/PhoneGalery';
 import TitleComponent from '../components/TitleComponent';
 import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -50,9 +51,9 @@ export default function Home() {
                         ></TitleComponent>
                     </div> */}
                     <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
-                        <img className={styles.logoImg} src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo" />
+                        <Image className={styles.logoImg} src="/images/GithubLogo.png" alt="Github logo" width={320} height={320} />
                     </a>
-                    <div>
+                    <div style={{marginTop: 30}}>
                         <a href={'https://github.com/fandres51'} target="blank" style={{ textDecoration: "none" }}>
                             <div className={styles.workMessage}>
                                 <div className={styles.workMessage}>Check out my portfolio</div>
