@@ -33,11 +33,17 @@ export default function Home() {
                     buttonAction={'https://www.linkedin.com/in/fabio-andres-enriquez-476692194/'}
                 ></BannerComponent>
                 <div className={styles.about}>
-                    <AboutEsComponent
+                    {/* <AboutEsComponent
                         title={"Acerca de mi"}
-                    ></AboutEsComponent>
+                    ></AboutEsComponent> */}
                 </div>
-                <div className={styles.aboutline}></div>
+                <div style={{
+                    padding: '0 20px',
+                }}>
+                    <h2>Esta p&aacute;gina todav&iacute;a est&aacute; en construcci&oacute;n 🚧</h2>
+                    <p>Puedes ir a <Link href='/'>la versi&oacute;n en ingl&eacute;s</Link> o mirar mi portafolio:</p>
+                </div>
+                {/* <div className={styles.aboutline}></div> */}
                 <div className={styles.previousWork}>
                     {/* <div className={styles.previousWorkTitle}>
                         <TitleComponent

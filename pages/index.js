@@ -3,10 +3,6 @@ import styles from "../styles/Home.module.css";
 import HeaderComponent from "../components/HeaderComponent";
 import FooterComponent from "../components/FooterComponent";
 import BannerComponent from "../components/BannerComponent";
-import AboutComponent from "../components/AboutComponent";
-import GaleryComponent from '../components/GaleryComponent';
-import PhoneGalery from '../components/PhoneGalery';
-import TitleComponent from '../components/TitleComponent';
 import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
 import Image from "next/image";
@@ -38,11 +34,17 @@ export default function Home() {
                     buttonAction="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/"
                 ></BannerComponent>
                 <div className={styles.about}>
-                    <AboutComponent
+                    {/* <AboutComponent
                         title={"About me:"}
-                    ></AboutComponent>
+                    ></AboutComponent> */}
                 </div>
-                <div className={styles.aboutline}></div>
+                <div style={{
+                    padding: '0 20px',
+                }}>
+                    <h2>This web page is still under construction 🚧</h2>
+                    <p>You can go to the <Link href='/es'>spanish version</Link> or check my portfolio:</p>
+                </div>
+                {/* <div className={styles.aboutline}></div> */}
                 <div className={styles.previousWork}>
                     {/* <div className={styles.previousWorkTitle}>
                         <TitleComponent
