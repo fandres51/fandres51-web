@@ -1,7 +1,7 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import HeaderComponent from "../components/HeaderComponent";
-import FooterComponent from "../components/FooterComponent";
+import styles from "../styles/pages/Home.module.css";
+import HeaderComponent from "../components/Layouts/HeaderComponent";
+import FooterComponent from "../components/Layouts/FooterComponent";
 import BannerComponent from "../components/BannerComponent";
 import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
@@ -10,6 +10,7 @@ import Image from "next/image";
 export default function Home() {
     return (
         <div className={styles.container}>
+            
             <Head>
                 <title>fandres51</title>
                 <meta
@@ -33,25 +34,15 @@ export default function Home() {
                     buttonMessage="Find me on Linkedin"
                     buttonAction="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/"
                 ></BannerComponent>
-                <div className={styles.about}>
-                    {/* <AboutComponent
-                        title={"About me:"}
-                    ></AboutComponent> */}
-                </div>
+              
                 <div style={{
                     padding: '0 20px',
                 }}>
                     <h2>This web page is still under construction 🚧</h2>
                     <p>You can go to the <Link href='/es'>spanish version</Link> or check my portfolio:</p>
                 </div>
-                {/* <div className={styles.aboutline}></div> */}
+              
                 <div className={styles.previousWork}>
-                    {/* <div className={styles.previousWorkTitle}>
-                        <TitleComponent
-                            title={'My Previous Work'}
-                            align={'center'}
-                        ></TitleComponent>
-                    </div> */}
                     <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
                         <Image className={styles.logoImg} src="/images/GithubLogo.png" alt="Github logo" width={320} height={320} />
                     </a>
@@ -64,10 +55,14 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
+
+                <FooterComponent
+                    title={'Get in touch with me'}
+                ></FooterComponent>
+
             </main>
-            <FooterComponent
-                title={'Get in touch with me'}
-            ></FooterComponent>
+
+
         </div>
     );
 }

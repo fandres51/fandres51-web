@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Footer.module.css'
+import styles from '../../styles/layouts/Footer.module.css'
 import { BsInstagram, BsTwitter, BsLinkedin, BsGithub, BsBehance } from 'react-icons/bs';
 
 export default function FooterComponent({title}) {
