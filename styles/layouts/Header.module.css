@@ -5,7 +5,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 12px;
+    padding: 8px 8px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .logo {
@@ -18,19 +20,27 @@
 .logo div h1 {
     font-weight: 300;
     font-size: 20px;
+    margin-left: 5px;
 }
 
-.callToAction {
-    color: #226E93;
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav * {
+    margin-left: 24px;
+    color: #545452;
     cursor: pointer;
-    font-weight: 400;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
-.callToAction:hover {
-    color: #205c7a;
+.nav a {
+    text-decoration: none;
 }
 
-.callToAction:active {
-    color: #184257;
+.nav *:hover {
+    color: #1A4F6D;
 }
