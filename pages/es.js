@@ -55,7 +55,7 @@ export default function Home() {
                         <Image style={{
                             borderRadius: '50%',
                         }}
-                            src="/images/banner-phone.png"
+                            src="/images/profile_bn.png"
                             alt="Profile picture"
                             width={350}
                             height={350} />
