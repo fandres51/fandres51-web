@@ -38,7 +38,7 @@ export default function Home() {
                         <h2 style={{
                             color: '#545452',
                             margin: 0,
-                        }}>Hi, I'm Fabio Andr&eacute;s, Software Developer & Digital Marketing Freelancer</h2>
+                        }}>Hi, I&apos;m Fabio Andr&eacute;s, Software Developer & Digital Marketing Freelancer</h2>
                         <div style={{
                             marginTop: 20,
                             marginBottom: 20,
@@ -79,7 +79,7 @@ export default function Home() {
                         marginTop: 100,
                     }}>
                         <h2>This web page is still under construction 🚧</h2>
-                        <p>You can go to the <Link href='/es'>spanish version</Link> or check my portfolio:</p>
+                        <p>You can go to the <Link href='/es'>spanish version</Link> or check my GitHub:</p>
                     </div>
                     <div style={{
                         textAlign: 'center',

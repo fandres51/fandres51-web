@@ -23,7 +23,7 @@ export default function HeaderComponent() {
         <Link href={'/portfolio'}>
           <div>{'Portfolio'}</div>
         </Link>
-        <a href="https://linktr.ee/fandres51" target="_blank">
+        <a href="https://linktr.ee/fandres51" target="_blank" rel="noreferrer">
           Contact Me
         </a>
       </nav>
