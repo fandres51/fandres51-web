@@ -2,8 +2,6 @@ import Head from "next/head";
 import styles from "../styles/pages/Home.module.css";
 import HeaderComponent from "../components/Layouts/HeaderComponent";
 import FooterComponent from "../components/Layouts/FooterComponent";
-import BannerComponent from "../components/BannerComponent";
-import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
 import Image from "next/image";
 
@@ -55,7 +53,7 @@ export default function Home() {
                         <Image style={{
                             borderRadius: '50%',
                         }}
-                            src="/images/banner-phone.png"
+                            src="/images/profile_bn.png"
                             alt="Profile picture"
                             width={350}
                             height={350} />
