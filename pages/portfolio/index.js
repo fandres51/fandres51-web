@@ -17,22 +17,27 @@ export default function Home() {
                     <PortfolioItemComponent
                         title="Portfolio Item 1 dfja;l lknsadf kdfs  sdk j"
                         image="https://i.ytimg.com/vi/i2Ote__R8dk/maxresdefault.jpg"
-                    ></PortfolioItemComponent>
+                        route={"/portfolio/1"}
+                        ></PortfolioItemComponent>
                     <PortfolioItemComponent
                         title="Portfolio Item 1 dfja;l"
                         image="https://i.ytimg.com/vi/i2Ote__R8dk/maxresdefault.jpg"
-                    ></PortfolioItemComponent>
+                        route={"/portfolio/1"}
+                        ></PortfolioItemComponent>
                     <PortfolioItemComponent
                         title="Portfolio Item 1 dfja;l"
                         image="https://i.ytimg.com/vi/i2Ote__R8dk/maxresdefault.jpg"
-                    ></PortfolioItemComponent>
+                        route={"/portfolio/1"}
+                        ></PortfolioItemComponent>
                     <PortfolioItemComponent
                         title="Portfolio Item 1 dfja;l"
                         image="https://i.ytimg.com/vi/i2Ote__R8dk/maxresdefault.jpg"
-                    ></PortfolioItemComponent>
+                        route={"/portfolio/1"}
+                        ></PortfolioItemComponent>
                     <PortfolioItemComponent
                         title="Portfolio Item 1 dfja;l"
                         image="https://i.ytimg.com/vi/i2Ote__R8dk/maxresdefault.jpg"
+                        route={"/portfolio/1"}
                     ></PortfolioItemComponent>
                 </div>
             </div>
