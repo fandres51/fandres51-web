@@ -22,12 +22,6 @@ export default function Home() {
             <main className={styles.main}>
                 <HeaderComponent></HeaderComponent>
 
-                <div style={{ // Line separator
-                    width: '100%',
-                    borderTop: '1px solid #e0e0e0',
-                    marginBottom: 100,
-                }}></div>
-
                 <div className={styles.banner} style={{ //banner
                     display: 'flex',
                     alignItems: 'center',
@@ -49,7 +43,8 @@ export default function Home() {
                                 fontWeight: 400,
                                 textDecoration: 'underline',
                                 cursor: 'pointer',
-                            }}>Check my LinkedIn</a>
+                            }} target="blank" href="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/"
+                            >Check my LinkedIn</a>
                         </div>
                     </div>
                     <div className={styles.image} style={{ //image
@@ -72,7 +67,7 @@ export default function Home() {
                     marginTop: 100,
                 }}></div>
 
-                <div> 
+                <div>
                     <div style={{
                         padding: '0 20px',
                         textAlign: 'center',
@@ -90,12 +85,6 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-
-                <div style={{ // Line separator
-                    width: '100%',
-                    borderTop: '1px solid #e0e0e0',
-                    marginTop: 130,
-                }}></div>
 
                 <FooterComponent
                     title={'Get in touch with me'}

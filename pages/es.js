@@ -43,7 +43,8 @@ export default function Home() {
                                 fontWeight: 400,
                                 textDecoration: 'underline',
                                 cursor: 'pointer',
-                            }}>Encu&eacute;ntrame en LinkedIn</a>
+                            }} target="blank" href="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/"
+                            >Encu&eacute;ntrame en LinkedIn</a>
                         </div>
                     </div>
                     <div className={styles.image} style={{ //image
@@ -73,7 +74,7 @@ export default function Home() {
                         marginTop: 100,
                     }}>
                         <h2>Esta p&aacute;gina web está en construcción 🚧</h2>
-                        <p>Puedes visitar la <Link href='/es'>versi&oacute;n en ingl&eacute;s</Link> or visitar mi GitHub:</p>
+                        <p>Puedes visitar la <Link href='/'>versi&oacute;n en ingl&eacute;s</Link> or visitar mi GitHub:</p>
                     </div>
                     <div style={{
                         textAlign: 'center',

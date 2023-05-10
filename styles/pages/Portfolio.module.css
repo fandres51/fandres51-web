@@ -1,0 +1,29 @@
+.portfolioInnerBox {
+    max-width: 1176px;
+    text-align: left;
+}
+
+.card {
+    padding: 30px;
+    height: 280px;
+}
+
+@media (max-width: 1175px) {
+    .portfolioInnerBox {
+        max-width: 785px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 784px) {
+    .portfolioInnerBox {
+        text-align: center;
+    }
+}
+
+@media (max-width: 390px) {
+    .card {
+        padding: 20px;
+        height: auto;
+    }
+}
