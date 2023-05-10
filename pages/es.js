@@ -2,8 +2,6 @@ import Head from "next/head";
 import styles from "../styles/pages/Home.module.css";
 import HeaderComponent from "../components/Layouts/HeaderComponent";
 import FooterComponent from "../components/Layouts/FooterComponent";
-import BannerComponent from "../components/BannerComponent";
-import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
 import Image from "next/image";
 
