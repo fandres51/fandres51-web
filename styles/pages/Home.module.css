@@ -1,0 +1,34 @@
+.banner {
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px 50px;
+}
+
+.banner h2 {
+  font-size: 45px;
+}
+
+.image {
+  padding: 40px;
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+  }
+  
+  .banner *{
+    text-align: center;
+  }
+
+  .banner h2 {
+    font-size: 38px;
+  }
+
+  .image {
+    padding: 30px;
+    margin-top: 50px;
+  }
+}

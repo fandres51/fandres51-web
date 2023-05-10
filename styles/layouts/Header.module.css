@@ -1,0 +1,52 @@
+.header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo div h1 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav * {
+    margin-left: 24px;
+    color: #545452;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav *:hover {
+    color: #1A4F6D;
+}
+
+@media (max-width: 1000px) {
+    .logo div h1 {
+        display: none;
+    }
+}

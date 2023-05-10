@@ -1,12 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import HeaderComponent from "../components/HeaderComponent";
-import FooterComponent from "../components/FooterComponent";
+import styles from "../styles/pages/Home.module.css";
+import HeaderComponent from "../components/Layouts/HeaderComponent";
+import FooterComponent from "../components/Layouts/FooterComponent";
 import BannerComponent from "../components/BannerComponent";
-import AboutEsComponent from "../components/AboutEsComponent";
-import GaleryComponent from '../components/GaleryComponent';
-import PhoneGalery from '../components/PhoneGalery';
-import TitleComponent from '../components/TitleComponent';
 import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
 import Image from "next/image";
@@ -20,54 +16,88 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <HeaderComponent
-                    title="@fandres51"
-                    titleLink="/es"
-                    callToAction="Contáctame"
-                    callToActionLink="https://linktr.ee/fandres51"
-                ></HeaderComponent>
-                <div className={styles.upperline}></div>
-                <BannerComponent
-                    message="Hola, soy Fabio Andrés Enríquez, desarrollador de software de Quito, Ec."
-                    buttonMessage="Encuéntrame en Linkedin"
-                    buttonAction={'https://www.linkedin.com/in/fabio-andres-enriquez-476692194/'}
-                ></BannerComponent>
-                <div className={styles.about}>
-                    {/* <AboutEsComponent
-                        title={"Acerca de mi"}
-                    ></AboutEsComponent> */}
-                </div>
-                <div style={{
-                    padding: '0 20px',
+                <HeaderComponent></HeaderComponent>
+
+                <div style={{ // Line separator
+                    width: '100%',
+                    borderTop: '1px solid #e0e0e0',
+                    marginBottom: 100,
+                }}></div>
+
+                <div className={styles.banner} style={{ //banner
+                    display: 'flex',
+                    alignItems: 'center',
                 }}>
-                    <h2>Esta p&aacute;gina todav&iacute;a est&aacute; en construcci&oacute;n 🚧</h2>
-                    <p>Puedes ir a <Link href='/'>la versi&oacute;n en ingl&eacute;s</Link> o mirar mi portafolio:</p>
-                </div>
-                {/* <div className={styles.aboutline}></div> */}
-                <div className={styles.previousWork}>
-                    {/* <div className={styles.previousWorkTitle}>
-                        <TitleComponent
-                            title={'Trabajos previos'}
-                            align={'center'}
-                        ></TitleComponent>
+                    <div style={{ //text
+                        maxWidth: '470px',
+                    }}>
+                        <h2 style={{
+                            color: '#545452',
+                            margin: 0,
+                        }}>Hola, soy Fabio Andr&eacute;s, Software Developer y Digital Marketing Freelancer</h2>
+                        <div style={{
+                            marginTop: 20,
+                            marginBottom: 20,
+                        }}>
+                            <a style={{
+                                color: '#545452',
+                                fontSize: 25,
+                                fontWeight: 400,
+                                textDecoration: 'underline',
+                                cursor: 'pointer',
+                            }}>Encu&eacute;ntrame en LinkedIn</a>
+                        </div>
                     </div>
-                     */}
-                    <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
-                        <Image className={styles.logoImg} src="/images/GithubLogo.png" alt="Github logo"  width={320} height={320}/>
-                    </a>
-                    <div style={{marginTop: 30}}>
-                        <a href="https://behance.net/fandres51" target="blank" style={{ textDecoration: "none" }}>
-                            <div className={styles.workMessage}>
-                                <div className={styles.workMessage}>Mira mi portafolio</div>
-                                <BsArrowRightShort size={27} color='#226E93' />
-                            </div>
+                    <div className={styles.image} style={{ //image
+                        border: '1px solid #e0e0e0',
+                        borderRadius: '50%',
+                    }}>
+                        <Image style={{
+                            borderRadius: '50%',
+                        }}
+                            src="/images/banner-phone.png"
+                            alt="Profile picture"
+                            width={350}
+                            height={350} />
+                    </div>
+                </div>
+
+                <div style={{ // Line separator
+                    width: '100%',
+                    borderTop: '1px solid #e0e0e0',
+                    marginTop: 100,
+                }}></div>
+
+                <div>
+                    <div style={{
+                        padding: '0 20px',
+                        textAlign: 'center',
+                        marginTop: 100,
+                    }}>
+                        <h2>Esta p&aacute;gina web está en construcción 🚧</h2>
+                        <p>Puedes visitar la <Link href='/es'>versi&oacute;n en ingl&eacute;s</Link> or visitar mi GitHub:</p>
+                    </div>
+                    <div style={{
+                        textAlign: 'center',
+                        margin: '50px 0',
+                    }} className={styles.previousWork}>
+                        <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
+                            <Image className={styles.logoImg} src="/images/GithubLogo.png" alt="Github logo" width={250} height={250} />
                         </a>
                     </div>
                 </div>
+
+                <div style={{ // Line separator
+                    width: '100%',
+                    borderTop: '1px solid #e0e0e0',
+                    marginTop: 130,
+                }}></div>
+
+                <FooterComponent
+                    title={'Get in touch with me'}
+                ></FooterComponent>
+
             </main>
-            <FooterComponent
-                title={'Contáctate conmigo'}
-            ></FooterComponent>
         </div>
     );
 }
