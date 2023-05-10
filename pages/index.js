@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "../styles/pages/Home.module.css";
 import HeaderComponent from "../components/Layouts/HeaderComponent";
 import FooterComponent from "../components/Layouts/FooterComponent";
-import { BsArrowRightShort } from 'react-icons/bs';
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,30 +20,39 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                
                 <HeaderComponent></HeaderComponent>
-                
+
                 <div style={{ // Line separator
                     width: '100%',
                     borderTop: '1px solid #e0e0e0',
+                    marginBottom: 100,
                 }}></div>
 
-                <div style={{ //banner element
+                <div className={styles.banner} style={{ //banner
                     display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    margin: '60px 16px',
+                    alignItems: 'center',
                 }}>
-                    <div style={{
-                        width: '460px',
+                    <div style={{ //text
+                        maxWidth: '450px',
                     }}>
-                        <p style={{
-                            fontSize: 48,
+                        <h2 style={{
                             color: '#545452',
-                        }}>Hi, I am Fabio Andrés, Software Developer and Marketing Freelancer</p>
+                            margin: 0,
+                        }}>Hi, I'm Fabio Andr&eacute;s, Software Developer & Digital Marketing Freelancer</h2>
+                        <div style={{
+                            marginTop: 20,
+                            marginBottom: 20,
+                        }}>
+                            <a style={{
+                                color: '#545452',
+                                fontSize: 25,
+                                fontWeight: 400,
+                                textDecoration: 'underline',
+                                cursor: 'pointer',
+                            }}>Check my LinkedIn</a>
+                        </div>
                     </div>
-                    <div style={{
-                        padding: 40,
+                    <div className={styles.image} style={{ //image
                         border: '1px solid #e0e0e0',
                         borderRadius: '50%',
                     }}>
@@ -53,50 +61,40 @@ export default function Home() {
                         }}
                             src="/images/banner-phone.png"
                             alt="Profile picture"
-                            width={400}
-                            height={400} />
+                            width={350}
+                            height={350} />
                     </div>
                 </div>
 
                 <div style={{ // Line separator
                     width: '100%',
                     borderTop: '1px solid #e0e0e0',
-                    marginTop: 200,
+                    marginTop: 100,
                 }}></div>
 
-
-                {/* <BannerComponent
-                    message="Hi, I'm Fabio Andrés Enríquez, a Software Developer based on Quito, Ec."
-                    buttonMessage="Find me on Linkedin"
-                    buttonAction="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/"
-                ></BannerComponent> */}
-
-                <div style={{
-                    padding: '0 20px',
-                    textAlign: 'center',
-                    marginTop: 100,
-                }}>
-                    <h2>This web page is still under construction 🚧</h2>
-                    <p>You can go to the <Link href='/es'>spanish version</Link> or check my portfolio:</p>
-                </div>
-
-                <div className={styles.previousWork}>
-                    <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
-                        <Image className={styles.logoImg} src="/images/GithubLogo.png" alt="Github logo" width={250} height={250} />
-                    </a>
-                    {/* <div style={{ marginTop: 30 }}>
-                        <a href={'https://github.com/fandres51'} target="blank" style={{ textDecoration: "none" }}>
-                            <div className={styles.workMessage}>
-                                <div className={styles.workMessage}>Check out my portfolio</div>
-                                <BsArrowRightShort size={27} color='#226E93' />
-                            </div>
+                <div> 
+                    <div style={{
+                        padding: '0 20px',
+                        textAlign: 'center',
+                        marginTop: 100,
+                    }}>
+                        <h2>This web page is still under construction 🚧</h2>
+                        <p>You can go to the <Link href='/es'>spanish version</Link> or check my portfolio:</p>
+                    </div>
+                    <div style={{
+                        textAlign: 'center',
+                        margin: '50px 0',
+                    }} className={styles.previousWork}>
+                        <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
+                            <Image className={styles.logoImg} src="/images/GithubLogo.png" alt="Github logo" width={250} height={250} />
                         </a>
-                    </div> */}
+                    </div>
                 </div>
 
                 <div style={{ // Line separator
                     width: '100%',
                     borderTop: '1px solid #e0e0e0',
+                    marginTop: 130,
                 }}></div>
 
                 <FooterComponent
