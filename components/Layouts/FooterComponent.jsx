@@ -8,8 +8,6 @@ export default function FooterComponent({ title }) {
             <div style={{ // Line separator
                 width: '100%',
                 borderTop: '1px solid #e0e0e0',
-                marginTop: 70,
-                marginBottom: 20,
             }}></div>
             <div className={styles.content}>
                 <div className={styles.iconsBox}>

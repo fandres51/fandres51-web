@@ -43,7 +43,7 @@ export default function Home() {
                                 fontWeight: 400,
                                 textDecoration: 'underline',
                                 cursor: 'pointer',
-                            }} target="blank" href="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/"
+                            }} target="blank" href="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/?locale=es_ES"
                             >Encu&eacute;ntrame en LinkedIn</a>
                         </div>
                     </div>

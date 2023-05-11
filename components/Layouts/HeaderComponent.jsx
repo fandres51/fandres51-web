@@ -17,7 +17,7 @@ export default function HeaderComponent() {
               width={45}
               height={45}
             />
-            <div><h1>{'fandres51'}</h1></div>
+            <div><h2>{'fandres51'}</h2></div>
           </div>
         </Link>
         <nav className={styles.nav}>
@@ -32,7 +32,6 @@ export default function HeaderComponent() {
       <div style={{ // Line separator
         width: '100%',
         borderTop: '1px solid #e0e0e0',
-        marginBottom: 100,
       }}></div>
     </div>
   )

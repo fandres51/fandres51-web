@@ -34,7 +34,7 @@ export default function PortfolioItemComponent({ image, title, route }) {
                         height: '20px',
                     }}></div>
                     <div style={{
-                        fontSize: '20px',
+                        fontSize: '23px',
                         fontWeight: '600',
                         color: '#545550',
                         textAlign: 'center',

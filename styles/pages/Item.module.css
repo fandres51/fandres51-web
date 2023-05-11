@@ -1,0 +1,45 @@
+.container > div {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.headSection {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.markdown img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.markdown pre{
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #545452;
+    color: white;
+}
+
+.markdown p {
+    margin-right: 10px;
+}
+
+@media (max-width: 750px) {
+    .container > div {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .headSection {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .headerTexts {
+        text-align: center;
+    }
+}

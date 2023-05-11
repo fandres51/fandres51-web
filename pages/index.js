@@ -25,6 +25,7 @@ export default function Home() {
                 <div className={styles.banner} style={{ //banner
                     display: 'flex',
                     alignItems: 'center',
+                    marginTop: 100,
                 }}>
                     <div style={{ //text
                         maxWidth: '450px',
@@ -79,6 +80,7 @@ export default function Home() {
                     <div style={{
                         textAlign: 'center',
                         margin: '50px 0',
+                        marginBottom: 100,
                     }} className={styles.previousWork}>
                         <a href="https://github.com/fandres51" target="blank" className={styles.portfolioLogo}>
                             <Image className={styles.logoImg} src="/images/GithubLogo.png" alt="Github logo" width={250} height={250} />
