@@ -44,8 +44,8 @@ export default function Home() {
                                 fontWeight: 400,
                                 textDecoration: 'underline',
                                 cursor: 'pointer',
-                            }} target="blank" href="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/"
-                            >Check my LinkedIn</a>
+                            }} target="blank" href="mailto:fabio.and1514@gmail.com"
+                            >Send me an e-mail</a>
                         </div>
                     </div>
                     <div className={styles.image} style={{ //image
