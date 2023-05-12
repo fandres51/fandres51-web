@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../../styles/layouts/Footer.module.css'
 import { BsInstagram, BsLinkedin, BsGithub, BsFillJournalBookmarkFill } from 'react-icons/bs';
+import { FiMail } from 'react-icons/fi';
 
 export default function FooterComponent({ title }) {
     return (
@@ -12,8 +13,9 @@ export default function FooterComponent({ title }) {
             <div className={styles.content}>
                 <div className={styles.iconsBox}>
                     <a href="https://instagram.com/fandres51" target="blank"><BsInstagram size={40} color='#545452' /></a>
-                    <a href="https://linkedin.com/in/fabio-andres-enriquez-476692194/" target="blank"><BsLinkedin size={40} color='#545452' /></a>
                     <a href="https://github.com/fandres51" target="blank"><BsGithub size={40} color='#545452' /></a>
+                    <a href="mailto:fabio.and1514@gmail.com" target="blank"><FiMail size={40} color='#545452' /></a>
+                    <a href="https://linkedin.com/in/fabio-andres-enriquez-476692194/" target="blank"><BsLinkedin size={40} color='#545452' /></a>
                 </div>
             </div>
             <div className={styles.copyright}>Copyright © 2023 fandres51</div>

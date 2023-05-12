@@ -16,12 +16,6 @@ export default function Home() {
             <main className={styles.main}>
                 <HeaderComponent></HeaderComponent>
 
-                <div style={{ // Line separator
-                    width: '100%',
-                    borderTop: '1px solid #e0e0e0',
-                    marginBottom: 100,
-                }}></div>
-
                 <div className={styles.banner} style={{ //banner
                     display: 'flex',
                     alignItems: 'center',
@@ -43,8 +37,8 @@ export default function Home() {
                                 fontWeight: 400,
                                 textDecoration: 'underline',
                                 cursor: 'pointer',
-                            }} target="blank" href="https://www.linkedin.com/in/fabio-andres-enriquez-476692194/?locale=es_ES"
-                            >Encu&eacute;ntrame en LinkedIn</a>
+                            }} target="blank" href="mailto:fabio.and1514@gmail.com"
+                            >Cont&aacute;ctame por e-mail</a>
                         </div>
                     </div>
                     <div className={styles.image} style={{ //image
@@ -74,7 +68,7 @@ export default function Home() {
                         marginTop: 100,
                     }}>
                         <h2>Esta p&aacute;gina web está en construcción 🚧</h2>
-                        <p>Puedes visitar la <Link href='/'>versi&oacute;n en ingl&eacute;s</Link> or visitar mi GitHub:</p>
+                        <p>Puedes ir a la <Link href='/'>versi&oacute;n en ingl&eacute;s</Link> or visitar mi GitHub:</p>
                     </div>
                     <div style={{
                         textAlign: 'center',
@@ -88,8 +82,7 @@ export default function Home() {
 
                 <div style={{ // Line separator
                     width: '100%',
-                    borderTop: '1px solid #e0e0e0',
-                    marginTop: 130,
+                    marginTop: 100,
                 }}></div>
 
                 <FooterComponent
