@@ -21,8 +21,8 @@ export default function HeaderComponent() {
           </div>
         </Link>
         <nav className={styles.nav}>
-          <Link href={'/portfolio'}>
-            <div>{'Portfolio'}</div>
+          <Link href={'/blog'}>
+            <div>{'Blog'}</div>
           </Link>
           <a href="https://linktr.ee/fandres51" target="blank">
             Contact Me

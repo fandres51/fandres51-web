@@ -15,7 +15,7 @@ export default function Home({ items }) {
                 color: "#545452",
                 marginTop: "50px",
                 marginBottom: "25px",
-            }}>Projects I have worked on:</h1>
+            }}>Blog</h1>
             <div style={{
                 textAlign: "center",
                 width: "100%",
@@ -28,7 +28,7 @@ export default function Home({ items }) {
                             title={item.title}
                             key={item.title}
                             image={item.image}
-                            route={"/portfolio/" + item.title.replace(/\s+/g, '-').toLowerCase()}
+                            route={"/blog/" + item.title.replace(/\s+/g, '-').toLowerCase()}
                         ></PortfolioItemComponent>
                     ))}
                 </div>
