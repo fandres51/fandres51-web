@@ -33,7 +33,7 @@ export default function Home() {
                         <h2 style={{
                             color: '#545452',
                             margin: 0,
-                        }}>Hi, I&apos;m Fabio Andr&eacute;s, Software Developer & Digital Marketing Freelancer</h2>
+                        }}>Hi, I&apos;m Fabio Andr&eacute;s, Software Engineer from Quito, Ec.</h2>
                         <div style={{
                             marginTop: 20,
                             marginBottom: 20,
@@ -44,8 +44,8 @@ export default function Home() {
                                 fontWeight: 400,
                                 textDecoration: 'underline',
                                 cursor: 'pointer',
-                            }} target="blank" href="mailto:fabio.and1514@gmail.com"
-                            >Send me an e-mail</a>
+                            }} target="blank" href="mailto:fandres51@outlook.com"
+                            >Contact me by e-mail</a>
                         </div>
                     </div>
                     <div className={styles.image} style={{ //image
@@ -89,7 +89,7 @@ export default function Home() {
                 </div>
 
                 <FooterComponent
-                    title={'Get in touch with me'}
+                    title={'Other usefull links'}
                 ></FooterComponent>
 
             </main>

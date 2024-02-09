@@ -24,7 +24,7 @@ export default function HeaderComponent() {
           <Link href={'/blog'}>
             <div>{'Blog'}</div>
           </Link>
-          <a href="https://linktr.ee/fandres51" target="blank">
+          <a href="https://github.com/fandres51" target="blank">
             Contact Me
           </a>
         </nav>
