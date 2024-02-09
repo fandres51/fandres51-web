@@ -14,7 +14,7 @@ export default function FooterComponent() {
                 <div className={styles.iconsBox}>
                     <a href="https://github.com/fandres51" target="blank"><BsGithub size={40} color='#545452' /></a>
                     <a href="https://linkedin.com/in/fabio-andres-enriquez-476692194/" target="blank"><BsLinkedin size={40} color='#545452' /></a>
-                    <a href="https://medium.com/@fandres51" target="blank"><BsLinkedin size={40} color='#545452' /></a>
+                    <a href="https://medium.com/@fandres51" target="blank"><BsMedium size={40} color='#545452' /></a>
                     {/* <a href="https://tiktok.com/fandres51" target="blank"><BsTiktok size={40} color='#545452' /></a> */}
                     {/* <a href="https://instagram.com/fandres51" target="blank"><BsInstagram size={40} color='#545452' /></a> */}
                     {/* <a href="mailto:fabio.and1514@gmail.com" target="blank"><FiMail size={40} color='#545452' /></a> */}
