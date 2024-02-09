@@ -37,7 +37,7 @@ export default function Home() {
                                 fontWeight: 400,
                                 textDecoration: 'underline',
                                 cursor: 'pointer',
-                            }} target="blank" href="mailto:fabio.and1514@gmail.com"
+                            }} target="blank" href="mailto:fandres51@outlook.com"
                             >Cont&aacute;ctame por e-mail</a>
                         </div>
                     </div>
