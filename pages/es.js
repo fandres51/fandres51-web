@@ -26,7 +26,7 @@ export default function Home() {
                         <h2 style={{
                             color: '#545452',
                             margin: 0,
-                        }}>Hola, soy Fabio Andr&eacute;s, Software Developer y Digital Marketing Freelancer</h2>
+                        }}>Hola, soy Fabio Andr&eacute;s, Desarrollador de Software de Quito, Ec.</h2>
                         <div style={{
                             marginTop: 20,
                             marginBottom: 20,
@@ -86,7 +86,7 @@ export default function Home() {
                 }}></div>
 
                 <FooterComponent
-                    title={'Get in touch with me'}
+                    title={'Encu&eacute;ntrame en'}
                 ></FooterComponent>
 
             </main>
